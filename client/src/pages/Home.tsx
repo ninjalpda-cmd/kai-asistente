@@ -4,9 +4,13 @@ import { useLocation } from "wouter";
 import { getLoginUrl } from "@/const";
 
 export default function Home() {
-  const { user, isAuthenticated } = useAuth();
+  const auth = useAuth();
   const [, setLocation] = useLocation();
-  const userName = user?.name || "Yair";
+  
+  // Acceso seguro a propiedades de auth
+  const user = auth?.user;
+  const isAuthenticated = auth?.isAuthenticated;
+  const userName = user?.name || user?.username || "Usuario";
 
   // LOGO NEX (SVG Minimalista ShaDowLinG)
   const ShaDowLinGLogo = () => (

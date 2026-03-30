@@ -1,4 +1,4 @@
-const CACHE_NAME = 'shadowling-v2'; // Versión actualizada para forzar refresh
+const CACHE_NAME = 'shadowling-v3'; // Versión v3 para purga total
 const ASSETS = [
   '/',
   '/index.html',
@@ -8,7 +8,7 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', (event) => {
-  self.skipWaiting(); // Forzar activación inmediata
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
   );
