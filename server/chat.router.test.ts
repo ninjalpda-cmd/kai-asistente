@@ -51,7 +51,7 @@ vi.mock("./chat.service", () => ({
     tokens: 15,
     createdAt: new Date(),
   }),
-  buildSystemPrompt: vi.fn().mockResolvedValue("Eres Kai, un asistente de IA."),
+  buildSystemPrompt: vi.fn().mockResolvedValue("Eres ShaDoWLinG, un asistente de IA."),
   getOrCreateUserPreferences: vi.fn().mockResolvedValue({
     id: 1,
     userId: 1,
@@ -179,7 +179,7 @@ describe("chat.router", () => {
     it("envía un mensaje y devuelve la respuesta del asistente", async () => {
       const result = await caller.chat.sendMessage({
         conversationId: 1,
-        message: "Hola Kai",
+        message: "Hola ShaDoWLinG",
         taskType: "conversational",
       });
 

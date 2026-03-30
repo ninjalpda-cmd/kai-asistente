@@ -1,4 +1,4 @@
-# Kai - Asistente de IA: TODO
+# ShaDoWLinG - Asistente de IA: TODO
 
 ## Base de Datos
 - [x] Actualizar drizzle/schema.ts con tablas: conversations, messages, memoryStore, userPreferences

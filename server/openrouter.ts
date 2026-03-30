@@ -206,7 +206,7 @@ export function createOpenRouterClient() {
 
           return {
             content,
-            modelUsed: model?.name ?? "Kai LLM",
+            modelUsed: model?.name ?? "ShaDoWLinG LLM",
             tokensUsed,
           };
         } catch (error) {
