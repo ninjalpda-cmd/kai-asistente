@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-black text-white p-4 overflow-hidden">
-      {/* Reemplazo del logo y nombre de Kai */}
+      {/* Logo y nombre de ShaDoWLinG */}
       <ShaDowLinGLogo />
 
       <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-indigo-500 mb-2">

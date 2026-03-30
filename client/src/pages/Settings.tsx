@@ -204,7 +204,7 @@ export default function Settings() {
             <Sliders className="w-3.5 h-3.5 text-white" />
           </div>
           <h1 className="text-base font-semibold text-foreground">
-            Configuración de Kai
+            Configuración de ShaDoWLinG
           </h1>
         </div>
       </header>
@@ -225,7 +225,7 @@ export default function Settings() {
                 </h2>
               </div>
               <p className="text-xs text-muted-foreground">
-                Elige cómo quieres que Kai se comunique contigo
+                Elige cómo quieres que ShaDoWLinG se comunique contigo
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {TONE_OPTIONS.map((opt) => (
@@ -288,7 +288,7 @@ export default function Settings() {
                       Usar emojis
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Kai usará emojis ocasionalmente en sus respuestas
+                      ShaDoWLinG usará emojis ocasionalmente en sus respuestas
                     </p>
                   </div>
                   <Toggle checked={useEmojis} onChange={setUseEmojis} />
@@ -327,7 +327,7 @@ export default function Settings() {
                       Notificaciones del sistema
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Recibir alertas y actualizaciones de Kai
+                      Recibir alertas y actualizaciones de ShaDoWLinG
                     </p>
                   </div>
                   <Toggle
@@ -342,7 +342,7 @@ export default function Settings() {
                       Mensajes proactivos
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Kai puede iniciar conversaciones con recordatorios
+                      ShaDoWLinG puede iniciar conversaciones con recordatorios
                     </p>
                   </div>
                   <Toggle
@@ -388,7 +388,7 @@ function ModelsInfo() {
         </h2>
       </div>
       <p className="text-xs text-muted-foreground">
-        Kai selecciona automáticamente el mejor modelo según el tipo de tarea
+        ShaDoWLinG selecciona automáticamente el mejor modelo según el tipo de tarea
       </p>
 
       {isLoading ? (
